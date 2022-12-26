@@ -58,18 +58,18 @@ type DataScourceSpec struct {
 }
 
 type DataSourceProvider struct {
-	CloudWatch  cloudWatchProperties  `json:"cloudWatch,omitempty"`
-	AppDynamics appDynamicProperties  `json:"appdynamics,omitempty"`
-	DataDog     dataDogProperties     `json:"datadog,omitempty"`
-	Elastic     elasticProperties     `json:"elastic,omitempty"`
-	Graphite    graphiteProperties    `json:"graphite,omitempty"`
-	GrayLog     graylogproperties     `json:"graylog,omitempty"`
-	NewRelic    newRelicProperties    `json:"newRelic,omitempty"`
-	Prometheus  prometheusProperties  `json:"prometheus,omitempty"`
-	Splunk      splunkProperties      `json:"splunk,omitempty"`
-	StackDriver stackDriverProperties `json:"stackDriver,omitempty"`
-	SumoLogic   sumoLogicProperties   `json:"sumologic,omitempty"`
-	VmwareTanzu vmwareTanzuProperties `json:"vmwareTanzu,omitempty"`
+	CloudWatch  *cloudWatchProperties  `json:"cloudWatch,omitempty"`
+	AppDynamics *appDynamicProperties  `json:"appdynamics,omitempty"`
+	DataDog     *dataDogProperties     `json:"datadog,omitempty"`
+	Elastic     *elasticProperties     `json:"elastic,omitempty"`
+	Graphite    *graphiteProperties    `json:"graphite,omitempty"`
+	GrayLog     *graylogproperties     `json:"graylog,omitempty"`
+	NewRelic    *newRelicProperties    `json:"newRelic,omitempty"`
+	Prometheus  *prometheusProperties  `json:"prometheus,omitempty"`
+	Splunk      *splunkProperties      `json:"splunk,omitempty"`
+	StackDriver *stackDriverProperties `json:"stackDriver,omitempty"`
+	SumoLogic   *sumoLogicProperties   `json:"sumologic,omitempty"`
+	VmwareTanzu *vmwareTanzuProperties `json:"vmwareTanzu,omitempty"`
 }
 
 type cloudWatchProperties struct {
